@@ -28,6 +28,9 @@
       text-transform: inherit;
       @extend .fz-14;
       font-weight: 700;
+      &:hover{
+        background: rgba(83, 1, 107,.8);
+      }
     }
   }
   &__modalThanksyou{

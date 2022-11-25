@@ -1073,6 +1073,9 @@ body {
   text-transform: inherit;
   font-weight: 700;
 }
+.home__card__btnSubmit:hover {
+  background: rgba(83, 1, 107, 0.8);
+}
 .home__modalThanksyou__title {
   color: rgb(244, 64, 37);
   line-height: 1.2;
