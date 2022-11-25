@@ -1,10 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta http-equiv="REFRESH" content="1800"/>
+    <title>Home - Landing page TPBANK- MOBILE APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.13/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1669351504">
 
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.13/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.13/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1669351504"></script>
+    <style>
+        <!--        --><?//= file_get_contents('style.css'); ?>
+    </style>
+</head>
+<body class="">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     logged_in_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi"
+     logged_out_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi">
+</div>
+<script>
+    defer(function() {
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v5.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, 5000);
+</script><!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative"><div uk-height-viewport="offset-bottom: true" class="uk-flex uk-flex-middle uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/cover-20221122085348-cjccv.png" uk-img>
+    <div class="uk-width-1-1 uk-section">
+        <div class="uk-container">
+            <div uk-grid>
+                <div class="uk-width-1-2@m">
+                    <div class="home__card uk-card uk-card-default uk-card-body">
+                        <div class="home__item-30-15">
+                            <h3 class="home__card__title uk-h3 uk-margin-remove">Chào mừng đến eBank</h3>
+                            <div class="home__card__txt">Quý khách vui lòng nhập thông tin để tải ứng dụng eBank</div>
+                        </div>
+                        <div class="home__item-30-15">
+                            <div class="item__10">
+                                <input class="home__card__input uk-input" type="text" placeholder="Họ và tên" aria-label="Input">
+                            </div>
+                            <div class="item__10">
+                                <input class="home__card__input uk-input" type="text" placeholder="Số điện thoại" aria-label="Input">
+                            </div>
+                        </div>
+                        <div class="home__item-30-15">
+                            <button class="home__card__btnSubmit uk-button uk-button-large uk-background-secondary uk-width-1-1">Gửi thông tin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer id="footer" class="footer uk-light uk-position-relative uk-section uk-background-norepeat uk-background-center-center uk-background-cover" style="--src-img: url('images/eace8a9-8f1e-panaroma-city-sunny-people-street.jpg')">
+        <div class="uk-container uk-position-relative">
+            <div class="footer__item">
+                <div class="uk-child-width-1-3@m uk-flex-center" uk-grid>
+                    <div>
+                        <h4 class="uk-h4 footer__title">Trụ sở chính</h4>
+                        <ul class="uk-list footer__listTxt">
+                            <li>Tầng 7, số 97-99 Láng Hạ, Phường Láng Hạ, Quận Đống Đa, Tp Hà Nội</li>
+                            <li>02466622447</li>
+                            <li>support@accesstrade.vn</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="uk-h4 footer__title">VP Tp Hồ Chí Minh</h4>
+                        <ul class="uk-list footer__listTxt">
+                            <li>Số 927/1, đường CMT8, Phường 7, Quận Tân Bình, Tp Hồ Chí Minh</li>
+                            <li>02466622447</li>
+                            <li>support@accesstrade.vn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-text-center footer__item footer__copyTxt">© 2020 ACCESSTRADE a product of INTERSPACE VIETNAM. All rights reserved.</div>
+        </div>
+    </footer>
+</div>
+<!--/app-->
 </body>
 </html>
