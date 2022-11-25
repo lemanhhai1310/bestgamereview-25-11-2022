@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c17ed979-61fa-4679-b526-9c18dc8e2a53" name="bestgame" url="http://116.118.50.53">
+        <fileTransfer rootFolder="/themes.cathtmlcss.net/2022/11/bestgamereview" host="116.118.50.53" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

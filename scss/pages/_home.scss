@@ -1,0 +1,43 @@
+.home{
+  &__card{
+    padding: 20px;
+    @include media-breakpoint-up('m'){
+      padding: 40px;
+    }
+    &__title{
+      color: rgb(83, 1, 107);
+      font-weight: 700;
+      @extend .fz-23;
+    }
+    &__txt{
+      color: rgb(83, 1, 107);
+      line-height: 1.6;
+      @extend .fz-16;
+    }
+    &__input{
+      border-color: rgb(83, 1, 107);
+      color: rgb(83, 1, 107);
+      @extend .fz-14;
+      &::placeholder{
+        color: rgba(5, 31, 78, 0.8);
+      }
+    }
+    &__btnSubmit{
+      background: rgb(83, 1, 107);
+      color: #ffffff;
+      text-transform: inherit;
+      @extend .fz-14;
+      font-weight: 700;
+    }
+  }
+  $max:30;
+  $min:15;
+  &__item-#{$max}-#{$min}{
+    &:nth-child(n+2){
+      margin-top: #{$min}px;
+      @include media-breakpoint-up('m'){
+        margin-top: #{$max}px;
+      }
+    }
+  }
+}
