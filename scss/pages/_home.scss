@@ -30,6 +30,41 @@
       font-weight: 700;
     }
   }
+  &__modalThanksyou{
+    &__title{
+      color: rgb(244, 64, 37);
+      @extend .fz-30;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+    &__box{
+      &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(255,255,255,.9);
+      }
+      &__txt{
+        @extend .fz-12;
+        color: #000;
+        line-height: 1.6;
+        font-weight: 700;
+      }
+      &__input{
+        background-color: transparent;
+        border-color: rgb(244, 64, 37);
+        color: rgb(84, 84, 84);
+        @extend .fz-12;
+        &::placeholder{
+          color: rgb(84, 84, 84);
+        }
+      }
+
+    }
+  }
   $max:30;
   $min:15;
   &__item-#{$max}-#{$min}{

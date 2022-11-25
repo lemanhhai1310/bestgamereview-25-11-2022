@@ -814,16 +814,16 @@ body {
   }
 }
 
-.fz-12 {
+.fz-12, .home__modalThanksyou__box__input, .home__modalThanksyou__box__txt {
   font-size: 12px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-12 {
+  .fz-12, .home__modalThanksyou__box__input, .home__modalThanksyou__box__txt {
     font-size: calc(12px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-12 {
+  .fz-12, .home__modalThanksyou__box__input, .home__modalThanksyou__box__txt {
     font-size: 12px !important;
   }
 }
@@ -926,16 +926,16 @@ body {
   }
 }
 
-.fz-30 {
+.fz-30, .home__modalThanksyou__title {
   font-size: 21px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-30 {
+  .fz-30, .home__modalThanksyou__title {
     font-size: calc(21px + 9 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-30 {
+  .fz-30, .home__modalThanksyou__title {
     font-size: 30px !important;
   }
 }
@@ -1072,6 +1072,33 @@ body {
   color: #ffffff;
   text-transform: inherit;
   font-weight: 700;
+}
+.home__modalThanksyou__title {
+  color: rgb(244, 64, 37);
+  line-height: 1.2;
+  font-weight: 700;
+}
+.home__modalThanksyou__box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.home__modalThanksyou__box__txt {
+  color: #000;
+  line-height: 1.6;
+  font-weight: 700;
+}
+.home__modalThanksyou__box__input {
+  background-color: transparent;
+  border-color: rgb(244, 64, 37);
+  color: rgb(84, 84, 84);
+}
+.home__modalThanksyou__box__input::placeholder {
+  color: rgb(84, 84, 84);
 }
 .home__item-30-15:nth-child(n+2) {
   margin-top: 15px;

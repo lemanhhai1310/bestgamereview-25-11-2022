@@ -1,6 +1,47 @@
 <?php $data["title"] = "Home"; ?>
 <?php $bodyClass = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
+<!-- This is the modal with the default close button -->
+<div id="modal-close-default-thanksyou" class="uk-flex-top home__modalThanksyou" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title home__modalThanksyou__title uk-text-center">Tải app ngay</h2>
+        <form class="uk-padding-small uk-position-relative uk-form-stacked home__modalThanksyou__box uk-background-norepeat uk-background-top-center uk-background-cover" data-src="images/a6bikyly20221122072014.jpg" uk-img>
+            <div class="uk-position-relative">
+                <label class="uk-form-label home__modalThanksyou__box__txt" for="form-stacked-text">Lưu ý: Sau khi tải app, bắt buộc nhập Mã giới thiệu</label>
+                <div class="uk-form-controls">
+                    <div class="uk-inline uk-width-1-1">
+                        <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: link"></a>
+                        <input class="uk-input home__modalThanksyou__box__input" type="text" placeholder="CODE NUMBER" aria-label="Clickable icon">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="uk-text-center"><img src="images/swync-download-android-ios-removebg-preview-20220713041319.png" alt=""></div>
+    </div>
+</div>
+<script>
+    const x = document.querySelector.bind(document);
+    const xx = document.querySelectorAll.bind(document);
+
+    const app = {
+        render: function () {
+            const modal_thanksyou = x('#modal-close-default-thanksyou');
+
+            if (modal_thanksyou){
+                UIkit.modal(modal_thanksyou).show();
+            }
+        },
+        start: function () {
+            this.render();
+        }
+    }
+
+    window.addEventListener("load", ()=>{
+        console.log("page is fully loaded");
+        app.start();
+    })
+</script>
 <div uk-height-viewport="offset-bottom: true" class="uk-flex uk-flex-middle uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/cover-20221122085348-cjccv.png" uk-img>
     <div class="uk-width-1-1 uk-section">
         <div class="uk-container">
